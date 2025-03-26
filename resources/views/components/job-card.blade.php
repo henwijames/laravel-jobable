@@ -1,15 +1,17 @@
-<div class="p-4 bg-white/5 rounded-xl flex flex-col text-center">
+<x-panel class="flex flex-col">
 
   <div class="self-start text-sm">Jobable</div>
-  <div class="py-8 font-bold">
-    <h3>Software Developer</h3>
-    <p>Full Time - From $60,000</p>
+  <div class="py-8">
+    <h3 class="font-bold group-hover:text-blue-accent text-xl transition-colors duration-300">Software Developer</h3>
+    <p class="text-sm mt-4">Full Time - From $60,000</p>
   </div>
   <div class="flex justify-between items-center mt-auto">
     <div>
-      <x-badge href="#">Tag</x-badge>
+      <x-tag size=small>Backend</x-tag>
+      <x-tag size=small>Frontend</x-tag>
+      <x-tag size=small>Manager</x-tag>
     </div>
 
-    <img src="http://placehold.co/42x42" alt="" class="rounded-xl">
+    <x-employer-logo :width=42 />
   </div>
-</div>
+</x-panel>

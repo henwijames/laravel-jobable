@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap");
 @import "tailwindcss";
 
 @source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
@@ -12,5 +12,9 @@
         "Noto Color Emoji";
 
     --color-black: #060606;
-    --font-noto: "Noto Sans", sans-serif;
+    --color-background: #202430;
+    --font-hanken: "Hanken Grotesk", sans-serif;
+    --text-2xs: 0.625rem;
+
+    --color-blue-accent: #1d74b7;
 }

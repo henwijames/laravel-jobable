@@ -11,27 +11,27 @@
   @vite(['resources/css/app.css'])
 </head>
 
-<body class="bg-black text-white font-noto">
-  <div class="px-10">
+<body class="bg-background text-white font-hanken">
+  <div class="max-w-[1200px] mx-auto px-10">
     <nav class="flex justify-between items-center py-4 border-b border-white/10">
       <div>
         <a href="/">
           <img src="{{ Vite::asset('resources/images/logo.webp') }}" alt="logo" class=" w-10 h-10">
         </a>
       </div>
-      <div class="space-x-6 font-bold">
+      <div class="space-x-6">
         <a href="#">Job</a>
         <a href="#">Careers</a>
         <a href="#">Salaries</a>
         <a href="#">Companies</a>
       </div>
       <div>
-        <a href="">
+        <a href="" class="px-3 bg-blue-accent rounded-xl py-1">
           Post a Job
         </a>
       </div>
     </nav>
-    <main class="mt-10 max-w-[986px] mx-auto">
+    <main class="mt-10 max-w-[1200px] mx-auto">
       {{ $slot }}
     </main>
   </div>
