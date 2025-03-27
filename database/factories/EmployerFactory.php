@@ -19,7 +19,7 @@ class EmployerFactory extends Factory
     {
         return [
             'name' => $this->faker->company(),
-            'logo' => $this->faker->imageUrl(640, 480, 'business', true, 'company-logo'),
+            'logo' => 'https://picsum.photos/seed/' . $this->faker->unique()->word . '/480/480',
             'user_id' => User::factory(),
         ];
     }
